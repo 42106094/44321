@@ -26,13 +26,24 @@ header li a{
     padding-left: 3%;
 }
 
+.cuerpo p{
+    font-size: 40px ;
+}
+
 .cuerpo ul{
  list-style: none;
 }
 
-.cuerpo ul a{
+.opcion-tipo1, .opcion-tipo2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.cuerpo ul p{
    text-decoration: none;
-   color: black; 
+   color: black;
+   font-size: 30px; 
 }
 
 .cuerpo li{
@@ -43,9 +54,7 @@ header li a{
     font-size: 60px;
 }
 
-.cuerpo p{
-    font-size: 40px ;
-}
+
 
 .cuerpo .texto{
     text-align: center;
@@ -53,3 +62,33 @@ header li a{
     padding-right: 15%;
 }
 
+.cuerpo-oculto{
+    display: none;
+}
+
+.cuerpo-oculto .tarjetas{
+    display: flex;
+    padding: 2%;
+    gap: 20px;
+}
+
+.cuerpo-oculto .tarjeta{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+}
+
+.cuerpo-oculto .tarjeta img{
+    width: 100px;
+    height: 100px;
+}
+.cuerpo-oculto .tarjeta H4{
+    font-size: 20px;
+}
+
+.cuerpo-oculto .tarjeta p{
+    font-size: 15px;
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
     <title>Tienda de cafe</title>
 </head>
 <body>
@@ -21,32 +22,26 @@
         
     </header>
    <div class="cuerpo">
-    <img src="bolsa de cafe general.png" alt="fotito de bolsa" width="400">
+    <img src="bolsa de cafe general.png" alt="fotito de bolsa" width="400" height="660">
     <div class="texto">
     <h1>Dale una probada a los mejores granos de cafe!</h1>
     <p>Toma una pieza de nuestra tienda con nuestros granos de cafe mas iconicos</p>
   <ul>
-     <li><div class="opcion-tipo1">
+     <li><div class="opcion-tipo1" onclick="mostrarOculto()">
         <img src="icono 2 granitos de cafe.png" alt="icono de dos granitos de cafe" width="20">
-        <a href="/#">Productos Principales</a>
+        <p>Productos Principales</p>
     </div>
     </li> 
      <li>
     <div class="opcion-tipo2">
         <img src="icono 2 granitos de cafe.png" alt="icono de dos granitos de cafe" width="20">
-        <a href="/#">Ver Menu</a>
+        <p>Ver Menu</p>
     </div>
     </li>
     </ul>
     </div>
- </div>
-
-
-   <!-- TERMINAR!!!!!
-    <div class="cuerpo-oculto">
-        <div class="columna-izquierda">
-            <img src="bolsa de cafe general.png" alt="fotito de bolsa" width="400">
-        </div>
+ 
+    <div class="cuerpo-oculto" onclick="mostrarOculto()">
         
            <div class="columna-derecha">
             <h2>Dale una probada a Nuestras mejores bolsas</h2>
@@ -66,18 +61,18 @@
                     <p>AGREGAR AL CARRITO</p>
                 </div>
                 <div class="tarjeta">
-                    <img src="mezcla-casa.png" alt="Mezcla de la Casa" width="120">
+                    <img src="bolsa de cafe general.png" alt="Mezcla de la Casa" width="120">
                     <h4>MEZCLA DE LA CASA</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <p>AGREGAR AL CARRITO</p>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+    </div>
     <footer>
         <img src="Granos de cafe decoracion.png" alt="fotito de granos de cafe decoracion" width="100%">
     </footer>
-
   
 </body>
 </html>
