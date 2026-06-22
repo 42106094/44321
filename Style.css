@@ -64,17 +64,17 @@ header li a{
 
 .cuerpo-oculto{
     display: none;
+    padding-right: 200px;
 }
 
-.cuerpo-oculto .tarjetas{
+.cuerpo-oculto .Tarjetas{
     display: flex;
     padding: 2%;
     gap: 20px;
 }
 
 .cuerpo-oculto .tarjeta{
-    display: flex;
-    align-items: center;
+
     gap: 10px;
     border: 1px solid #ccc;
     padding: 20px;
@@ -82,8 +82,8 @@ header li a{
 }
 
 .cuerpo-oculto .tarjeta img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 .cuerpo-oculto .tarjeta H4{
     font-size: 20px;
