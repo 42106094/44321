@@ -18,16 +18,24 @@ header li a{
     color:aliceblue;
 }
 
+.background {
+    background-image:url(nuez.png);
+    background-repeat: no-repeat; 
+    background-position: 4% 30%;
+    background-size: 760px 760px;
+    background-color: #6c4643;
+    
+}
 
 .cuerpo{
     display:flex;
     justify-content: space-between;
-    padding-top: 200px;
-    padding-left: 3%;
+    padding-top: 100px;
+    padding-left: 3%;   
 }
 
 .cuerpo p{
-    font-size: 40px ;
+    font-size: 30px ;
 }
 
 .cuerpo ul{
@@ -42,19 +50,24 @@ header li a{
 }
 .cuerpo ul p{
    text-decoration: none;
-   color: black;
-   font-size: 30px; 
+  color: rgb(253, 245, 234);
+   font-size: 20px; 
 }
 
 .cuerpo li{
-    font-size: 30px;
+    font-size: 20px;
+    color: rgb(253, 245, 234);
 }
+    
 
 .cuerpo h1{
-    font-size: 60px;
+    font-size: 40px;
+    color: rgb(253, 245, 234);
 }
 
-
+.cuerpo .imagen{
+    padding-left:10%;
+}
 
 .cuerpo .texto{
     text-align: center;
@@ -67,17 +80,30 @@ header li a{
     padding-right: 200px;
 }
 
+
+.cuerpo-oculto .columna-derecha h2{
+  color: rgb(253, 245, 234);;
+  font-size: 30px;
+}
+
+.cuerpo-oculto .columna-derecha h3{
+  color: rgb(253, 245, 234);;
+  font-size: 25px;
+}
+
 .cuerpo-oculto .Tarjetas{
     display: flex;
     padding: 2%;
     gap: 20px;
+    color: rgb(253, 245, 234);
 }
 
 .cuerpo-oculto .tarjeta{
-
+    background-color: #4E2F2A;
     gap: 10px;
     border: 1px solid #ccc;
     padding: 20px;
+    border-radius: 20px;
     width: 200px;
 }
 
