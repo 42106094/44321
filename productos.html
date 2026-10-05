@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <title>Productos | Casa Grano</title>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Casa Grano, inicio"><img src="logo.png" alt="Casa Grano" width="165"></a>
+        <nav aria-label="Navegación principal"><ul>
+            <li><a href="index.html">Home</a></li><li><a class="active" href="productos.html" aria-current="page">Productos</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="nosotros.html">Nosotros</a></li>
+        </ul></nav>
+        <div class="cart-wrap">
+            <button class="cart-toggle" type="button" aria-label="Abrir carrito" aria-expanded="false" aria-controls="cart-menu"><img src="carrito.png" alt="" width="38"><span class="cart-count" aria-live="polite">-</span></button>
+            <div class="cart-menu" id="cart-menu" hidden><h2>Tu carrito</h2><div class="cart-items"></div><p class="cart-total-line">Total aproximado <strong class="cart-total">$ 0</strong></p><a class="button button-dark checkout-link" href="checkout.html">Ir al checkout</a></div>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="page-heading"><p class="eyebrow">Tienda</p><h1>Nuestros productos</h1><p>Encontrá una variedad para cada taza. Los precios son orientativos.</p></section>
+        <section class="content-section catalog" aria-label="Catálogo de café"><div class="product-grid">
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Reloj de Mermelada</h3><p>Un bostezo de papel aterriza sobre los planetas tibios.</p><div class="product-buy"><strong>$ 8.900</strong><button class="button button-dark" type="button" data-add-to-cart data-id="reloj-mermelada" data-name="Reloj de Mermelada" data-price="8900">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>La Silla del Viento</h3><p>Una naranja de cartón espera el tren de las luciérnagas.</p><div class="product-buy"><strong>$ 9.400</strong><button class="button button-dark" type="button" data-add-to-cart data-id="silla-viento" data-name="La Silla del Viento" data-price="9400">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Grano de las Tres Lunas</h3><p>La brújula de azúcar conversa con un miércoles redondo.</p><div class="product-buy"><strong>$ 9.700</strong><button class="button button-dark" type="button" data-add-to-cart data-id="tres-lunas" data-name="Grano de las Tres Lunas" data-price="9700">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Caracol de Vapor</h3><p>Un mapa de gelatina descubre la estación del revés.</p><div class="product-buy"><strong>$ 10.200</strong><button class="button button-dark" type="button" data-add-to-cart data-id="caracol-vapor" data-name="Caracol de Vapor" data-price="10200">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Mezcla de la Casa</h3><p>Una combinación amable para acompañar cualquier momento.</p><div class="product-buy"><strong>$ 10.900</strong><button class="button button-dark" type="button" data-add-to-cart data-id="mezcla-casa" data-name="Mezcla de la Casa" data-price="10900">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Tueste Oscuro</h3><p>Un perfil intenso, profundo y de final prolongado.</p><div class="product-buy"><strong>$ 11.800</strong><button class="button button-dark" type="button" data-add-to-cart data-id="tueste-oscuro" data-name="Tueste Oscuro" data-price="11800">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Jardín de Bolsillos</h3><p>Las baldosas cantan en idioma de globos diminutos.</p><div class="product-buy"><strong>$ 12.000</strong><button class="button button-dark" type="button" data-add-to-cart data-id="jardin-bolsillos" data-name="Jardín de Bolsillos" data-price="12000">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>Origen Único</h3><p>Granos seleccionados para una taza limpia y aromática.</p><div class="product-buy"><strong>$ 12.500</strong><button class="button button-dark" type="button" data-add-to-cart data-id="origen-unico" data-name="Origen Único" data-price="12500">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>La Nube Cuadrada</h3><p>Pequeños relámpagos de madera nadan en la ventana azul.</p><div class="product-buy"><strong>$ 13.200</strong><button class="button button-dark" type="button" data-add-to-cart data-id="nube-cuadrada" data-name="La Nube Cuadrada" data-price="13200">Agregar</button></div></div></article>
+            <article class="product-card"><div class="product-image" aria-hidden="true"></div><div class="product-info"><h3>El Paraguas Invisible</h3><p>Las cucharas silban despacio bajo un techo de mandarinas.</p><div class="product-buy"><strong>$ 14.100</strong><button class="button button-dark" type="button" data-add-to-cart data-id="paraguas-invisible" data-name="El Paraguas Invisible" data-price="14100">Agregar</button></div></div></article>
+        </div></section>
+    </main>
+    <footer class="site-footer"><img src="Granos de cafe decoracion.png" alt="Granos de café" /><p>Casa Grano · Café elegido con cuidado</p></footer>
+</body>
+</html>

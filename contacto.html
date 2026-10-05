@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <title>Contacto | Casa Grano</title>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Casa Grano, inicio"><img src="logo.png" alt="Casa Grano" width="165"></a>
+        <nav aria-label="Navegación principal"><ul>
+            <li><a href="index.html">Home</a></li><li><a href="productos.html">Productos</a></li><li><a class="active" href="contacto.html" aria-current="page">Contacto</a></li><li><a href="nosotros.html">Nosotros</a></li>
+        </ul></nav>
+        <div class="cart-wrap">
+            <button class="cart-toggle" type="button" aria-label="Abrir carrito" aria-expanded="false" aria-controls="cart-menu"><img src="carrito.png" alt="" width="38"><span class="cart-count" aria-live="polite">-</span></button>
+            <div class="cart-menu" id="cart-menu" hidden><h2>Tu carrito</h2><div class="cart-items"></div><p class="cart-total-line">Total aproximado <strong class="cart-total">$ 0</strong></p><a class="button button-dark checkout-link" href="checkout.html">Ir al checkout</a></div>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="page-heading"><p class="eyebrow">Estamos para ayudarte</p><h1>Contacto</h1><p>¿Tenés una consulta sobre el café o tu pedido? Escribinos.</p></section>
+        <section class="info-layout">
+            <div class="info-copy"><h2>Hablemos</h2><p>Dejanos tu consulta y te responderemos a la brevedad.</p><p>Correo: hola@casagrano.example</p></div>
+            <form class="contact-form" data-local-form>
+                <label>Nombre<input name="name" autocomplete="name" required></label>
+                <label>Correo electrónico<input type="email" name="email" autocomplete="email" required></label>
+                <label>Mensaje<textarea name="message" required></textarea></label>
+                <button class="button button-dark" type="submit">Enviar mensaje</button>
+                <p class="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><img src="Granos de cafe decoracion.png" alt="Granos de café" /><p>Casa Grano · Café elegido con cuidado</p></footer>
+</body>
+</html>

@@ -1,81 +1,67 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <script src="script.js"></script>
-    <title>Tienda de cafe</title>
-</head>
+    <script src="script.js" defer></script>
+    <title>Casa Grano | Café de origen</title>
+</head> 
 <body>
-    <header>
-        <img src="logo.png" alt="fotito de logo" width="165">
-        <ul>
-            
-            <li><a href="/#">Home</a></li>
-            <li><a href="/#">Productos</a></li>
-            <li><a href="/#">Contacto</a></li>
-            <li><a href="/#">Nosotros</a></li>
-        </ul>
-        <a href="/#"> <img src="carrito.png" alt="fotito de carrito" width="100" ></a>
-        
-    </header>
-    <div class="background">
-   <div class="cuerpo">
-    <div class=" imagen">
-    <img src="bolsa de cafe general.png" alt="fotito de bolsa" width="300" height="500">
-    </div>
-    <div class="texto">
-    <h1>Dale una probada a los mejores granos de cafe!</h1>
-    <p>Toma una pieza de nuestra tienda con nuestros granos de cafe mas iconicos</p>
-  <ul>
-     <li><div class="opcion-tipo1" onclick="mostrarOculto()">
-        <img src="icono 2 granitos de cafe.png" alt="icono de dos granitos de cafe" width="20">
-        <p>Productos Principales</p>
-    </div>
-    </li> 
-     <li>
-    <div class="opcion-tipo2">
-        <img src="icono 2 granitos de cafe.png" alt="icono de dos granitos de cafe" width="20">
-        <p>Ver Menu</p>
-    </div>
-    </li>
-    </ul>
-    </div>
- 
-    <div class="cuerpo-oculto" onclick="mostrarOculto()">
-        
-           <div class="columna-derecha">
-            <h2>Dale una probada a Nuestras mejores bolsas</h2>
-            <h3>CONOCE NUESTRAS VARIEDADES</h3>
-            
-            <div class="Tarjetas">
-                <div class="tarjeta">
-                    <img src="origen-unico.jpg" alt="Origen Unico" width="120">
-                    <h4>ORIGEN ÚNICO</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>AGREGAR AL CARRITO</p>
-                </div>
-                <div class="tarjeta">
-                    <img src="tueste-oscuro.jpg" alt="Tueste Oscuro" width="120">
-                    <h4>TUESTE OSCURO</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>AGREGAR AL CARRITO</p>
-                </div>
-                <div class="tarjeta">
-                    <img src="bolsa de cafe general.png" alt="Mezcla de la Casa" width="120">
-                    <h4>MEZCLA DE LA CASA</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>AGREGAR AL CARRITO</p>
-                </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Casa Grano, inicio"><img src="logo.png" alt="Casa Grano" width="165"></a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="cart-wrap">
+            <button class="cart-toggle" type="button" aria-label="Abrir carrito" aria-expanded="false" aria-controls="cart-menu">
+                <img src="carrito.png" alt="" width="38"><span class="cart-count" aria-live="polite">-</span>
+            </button>
+            <div class="cart-menu" id="cart-menu" hidden>
+                <h2>Tu carrito</h2>
+                <div class="cart-items"></div>
+                <p class="cart-total-line">Total aproximado <strong class="cart-total">$ 0</strong></p>
+                <a class="button button-dark checkout-link" href="checkout.html">Ir al checkout</a>
             </div>
         </div>
-    </div>
-    </div>
-    <footer>
-        <img src="Granos de cafe decoracion.png" alt="fotito de granos de cafe decoracion" width="100%">
-    </footer>
-  </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-image"><img src="bolsa de cafe general.png" alt="Bolsa de café de Casa Grano"></div>
+            <div class="hero-copy">
+                <p class="eyebrow">Café para todos los días</p>
+                <h1>Dale una probada a los mejores granos de café.</h1>
+                <p>Elegimos variedades con carácter para que encuentres tu próxima taza favorita.</p>
+                <a class="button button-light" href="productos.html">Ver productos</a>
+            </div>
+        </section>
+        <section class="content-section home-products">
+            <div class="section-heading">
+                <div><p class="eyebrow">Nuestra selección</p><h2>Los más elegidos</h2></div>
+                <a class="text-link" href="productos.html">Ver los 10 productos</a>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image" aria-hidden="true"></div>
+                    <div class="product-info"><h3>Origen Único</h3><p>Granos seleccionados para una taza limpia y aromática.</p><div class="product-buy"><strong>$ 12.500</strong><button class="button button-dark" type="button" data-add-to-cart data-id="origen-unico" data-name="Origen Único" data-price="12500">Agregar</button></div></div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image" aria-hidden="true"></div>
+                    <div class="product-info"><h3>Tueste Oscuro</h3><p>Un perfil intenso, profundo y de final prolongado.</p><div class="product-buy"><strong>$ 11.800</strong><button class="button button-dark" type="button" data-add-to-cart data-id="tueste-oscuro" data-name="Tueste Oscuro" data-price="11800">Agregar</button></div></div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image" aria-hidden="true"></div>
+                    <div class="product-info"><h3>Mezcla de la Casa</h3><p>Una combinación amable para acompañar cualquier momento.</p><div class="product-buy"><strong>$ 10.900</strong><button class="button button-dark" type="button" data-add-to-cart data-id="mezcla-casa" data-name="Mezcla de la Casa" data-price="10900">Agregar</button></div></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><img src="Granos de cafe decoracion.png" alt="Granos de café" /><p>Casa Grano · Café elegido con cuidado</p></footer>
 </body>
 </html>
