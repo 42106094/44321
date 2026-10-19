@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
+<!-- Documento principal del sitio; lang identifica el idioma para navegadores y tecnologías de asistencia. -->
 <html lang="es">
 <head>
+    <!-- Metadatos, escala adaptable, recursos compartidos y título que aparece en la pestaña. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
@@ -9,8 +11,10 @@
     <title>Casa Grano | Café de origen</title>
 </head> 
 <body>
+    <!-- Cabecera compartida: identidad, navegación entre páginas y acceso al carrito desplegable. -->
     <header class="site-header">
         <a class="brand" href="index.html" aria-label="Casa Grano, inicio"><img src="logo.png" alt="Casa Grano" width="165"></a>
+        <!-- Enlaces principales; aria-current marca la página que está abierta. -->
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a class="active" href="index.html" aria-current="page">Home</a></li>
@@ -19,6 +23,7 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
+        <!-- El contador y el menú se completan con JavaScript a partir del carrito guardado. -->
         <div class="cart-wrap">
             <button class="cart-toggle" type="button" aria-label="Abrir carrito" aria-expanded="false" aria-controls="cart-menu">
                 <img src="carrito.png" alt="" width="38"><span class="cart-count" aria-live="polite">-</span>
@@ -31,7 +36,9 @@
             </div>
         </div>
     </header>
+    <!-- Contenido exclusivo de la página de inicio. -->
     <main>
+        <!-- Presentación visual de la marca con enlace directo al catálogo. -->
         <section class="hero">
             <div class="hero-image"><img src="bolsa de cafe general.png" alt="Bolsa de café de Casa Grano"></div>
             <div class="hero-copy">
@@ -41,20 +48,24 @@
                 <a class="button button-light" href="productos.html">Ver productos</a>
             </div>
         </section>
+        <!-- Selección breve de productos destacados; cada botón expone los datos que usa el carrito. -->
         <section class="content-section home-products">
             <div class="section-heading">
                 <div><p class="eyebrow">Nuestra selección</p><h2>Los más elegidos</h2></div>
                 <a class="text-link" href="productos.html">Ver los 10 productos</a>
             </div>
             <div class="product-grid">
+                <!-- Tarjeta de producto: imagen decorativa, descripción, precio y acción de compra. -->
                 <article class="product-card">
                     <div class="product-image" aria-hidden="true"></div>
                     <div class="product-info"><h3>Origen Único</h3><p>Granos seleccionados para una taza limpia y aromática.</p><div class="product-buy"><strong>$ 12.500</strong><button class="button button-dark" type="button" data-add-to-cart data-id="origen-unico" data-name="Origen Único" data-price="12500">Agregar</button></div></div>
                 </article>
+                <!-- Segunda tarjeta destacada con su identificador, nombre y precio para JavaScript. -->
                 <article class="product-card">
                     <div class="product-image" aria-hidden="true"></div>
                     <div class="product-info"><h3>Tueste Oscuro</h3><p>Un perfil intenso, profundo y de final prolongado.</p><div class="product-buy"><strong>$ 11.800</strong><button class="button button-dark" type="button" data-add-to-cart data-id="tueste-oscuro" data-name="Tueste Oscuro" data-price="11800">Agregar</button></div></div>
                 </article>
+                <!-- Tercera tarjeta destacada, estructurada igual para conservar una presentación uniforme. -->
                 <article class="product-card">
                     <div class="product-image" aria-hidden="true"></div>
                     <div class="product-info"><h3>Mezcla de la Casa</h3><p>Una combinación amable para acompañar cualquier momento.</p><div class="product-buy"><strong>$ 10.900</strong><button class="button button-dark" type="button" data-add-to-cart data-id="mezcla-casa" data-name="Mezcla de la Casa" data-price="10900">Agregar</button></div></div>
@@ -62,6 +73,7 @@
             </div>
         </section>
     </main>
+    <!-- Pie compartido con imagen decorativa y lema de la marca. -->
     <footer class="site-footer"><img src="Granos de cafe decoracion.png" alt="Granos de café" /><p>Casa Grano · Café elegido con cuidado</p></footer>
 </body>
 </html>
