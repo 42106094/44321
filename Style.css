@@ -207,6 +207,12 @@ a { color: inherit; }
 .product-card { overflow: hidden; border: 1px solid var(--line); background: #fffaf4; transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
 .product-image { position: relative; overflow: hidden; height: 205px; border-bottom: 1px solid var(--line); background: #eee4d8; }
 .product-image::after { position: absolute; top: -20%; left: -40%; width: 28%; height: 140%; background: linear-gradient(90deg, transparent, #fffaf4b8, transparent); content: ''; opacity: 0; transform: translateX(-160%) rotate(18deg); }
+.product-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .product-card:hover, .product-card:focus-within { border-color: var(--coffee-light); box-shadow: 0 10px 22px #34231f18; transform: translateY(-3px); }
     .product-card:hover .product-image::after, .product-card:focus-within .product-image::after { animation: product-glint .72s ease-out; }
